@@ -2,36 +2,30 @@
 
 int main()
 {
-    int row,col,N;
-    
-    scanf("%d",&N);
-    for (row = 1; row<= N; row++) {
-        
-        for (col=1; col<=N-row;col++) {
+    int row,colu,X;
+
+    scanf("%d",&X);
+    for (row = 1; row<= X; row++) {
+
+        for (colu=1; colu<=X-row;colu++) {
             printf(" ");
         }
-        
-   
-        for (col=1; col<=(2 * row - 1);col++) {
+        for (colu=1; colu<=(2 * row - 1);colu++) {
             printf("*");
         }
-        
         printf("\n");
     }
-    
-    
-    for (row=N-1; row>=1; row--) {
-       
-        for (col=1;col<=N-row;col++) {
+    for (row=X-1; row>=1; row--) {
+
+        for (colu=1;colu<=X-row;colu++) {
             printf(" ");
         }
-        
-        
-        for (col=1;col<=(2*row-1);col++) {
+        for (colu=1;colu<=(2*row-1);colu++)
+            {
             printf("*");
         }
-        
         printf("\n");
     }
     return 0;
 }
+
