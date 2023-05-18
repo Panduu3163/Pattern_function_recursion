@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    
- int row,col,N;
- scanf("%d",&N);
- 
- for(row=1;row<=N;row++)
+
+ int row,colu,X;
+ scanf("%d",&X);
+
+ for(row=1;row<=X;row++)
  {
-    for(col=1;col<=N-row;col++) 
+    for(colu=1;colu<=X-row;colu++)
     {
-     printf(" ")   ;
+     printf(" ");
     }
-    for(col=1;col<=row;col++)
+    for(colu=1;colu<=row;colu++)
     {
-     printf("%d",col) ;  
+     printf("%d",colu) ;
     }
- 
+
  printf("\n");
  }
  return 0;
